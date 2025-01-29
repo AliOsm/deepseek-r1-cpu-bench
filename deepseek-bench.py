@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import ollama
 
 from ollama import chat
@@ -35,7 +37,12 @@ PROMPTS = {
 }
 
 
+ANSWERS_PATH = Path('./answers')
+
+
 def main():
+  ANSWERS_PATH.mkdir(exist_ok=True)
+
   for model in MODELS:
     print(f'Pulling "{model}" if it does not exist...')
     ollama.pull(model)
@@ -48,7 +55,7 @@ def main():
     for prompts_type, prompts in PROMPTS.items():
       print(f'Benchmarking "{model}" on "{prompts_type}" prompts...', end=' ', flush=True)
 
-      aggregated_tokens_per_second, prompts_tokens_per_second = benchmark(model, prompts)
+      aggregated_tokens_per_second, prompts_tokens_per_second = benchmark(model, prompts_type, prompts)
       model_tokens_per_second.extend(prompts_tokens_per_second)
 
       print(f'{aggregated_tokens_per_second}t/s.')
@@ -56,10 +63,10 @@ def main():
     print(f'Overall "{model}" prompts: {round(sum(model_tokens_per_second) / len(model_tokens_per_second), 2)}t/s.\n')
 
 
-def benchmark(model: str, prompts: list[str]) -> tuple[float, list[float]]:
+def benchmark(model: str, prompts_type: str, prompts: list[str]) -> tuple[float, list[float]]:
   prompts_tokens_per_second = list()
 
-  for prompt in prompts:
+  for index, prompt in enumerate(prompts):
     response: ChatResponse = chat(
       model=model,
       messages=[
@@ -69,6 +76,12 @@ def benchmark(model: str, prompts: list[str]) -> tuple[float, list[float]]:
         },
       ],
     )
+
+    answer_path = ANSWERS_PATH / model / prompts_type / f'{index + 1}.txt'
+    answer_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(answer_path, 'w') as fp:
+      fp.write(response.message.content)
 
     prompts_tokens_per_second.append(response.eval_count / response.eval_duration * (10**9))
 
