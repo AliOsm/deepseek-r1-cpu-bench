@@ -1,0 +1,11 @@
+<think>
+
+</think>
+
+Machine learning is a subset of artificial intelligence (AI) that focuses on developing algorithms and statistical models to enable machines to perform specific tasks without explicit instructions. AI, on the other hand, refers to the broader field of creating machines that can perform tasks requiring human intelligence, such as problem-solving, decision-making, speech recognition, and more.
+
+In summary:
+- **Artificial Intelligence (AI)**: The overall concept of creating intelligent machines capable of performing tasks that typically require human intelligence.
+- **Machine Learning (ML)**: A specific approach within AI that involves training algorithms to learn patterns from data and make predictions or decisions without being explicitly programmed for the task.
+
+Essentially, all machine learning is AI, but not all AI is machine learning.

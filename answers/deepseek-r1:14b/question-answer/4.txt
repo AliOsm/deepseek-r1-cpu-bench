@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+The full form of LSTM is **Long Short-Term Memory**. It is a type of Recurrent Neural Network (RNN) architecture used in machine learning and deep learning to process sequential data while remembering information over long periods.

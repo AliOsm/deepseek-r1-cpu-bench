@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+Deep learning is a subset of machine learning that is based on artificial neural networks with many layers. It involves training models to learn representations of data through multiple processing layers, enabling them to capture complex patterns and relationships within the data.

@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+Machine learning is a subset of artificial intelligence (AI) that focuses on the development of algorithms capable of learning from and making decisions based on data. AI, in general, refers to the simulation of human intelligence processes by machines, particularly computer systems. While all machine learning falls under AI, not all AI applications are machine learning.

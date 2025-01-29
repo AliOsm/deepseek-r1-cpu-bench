@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+The full form of LSTM is **Long Short-Term Memory**. It is a type of recurrent neural network (RNN) architecture designed to handle long-term dependencies in sequential data, such as text, speech, or time series. LSTM networks are particularly effective at addressing the vanishing gradient problem that can occur when training traditional RNNs on sequences with long-range dependencies.

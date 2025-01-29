@@ -1,0 +1,29 @@
+<think>
+Alright, so I need to help someone book a flight for four people to Seattle in the U.S. Let me think through how to approach this.
+
+First, I should consider where the user is flying from because that's crucial for finding available flights and calculating the correct prices. Without knowing the origin city or airport code, it might be challenging to provide accurate options. So, I'll start by asking them about their departure location.
+
+Next, dates are important. Flights can vary a lot in price depending on when you fly. If they have specific travel dates—whether it's for a vacation, business, or an event—I can look into the best deals around those times. Also, knowing if they prefer weekend or weekday flights might help narrow down options.
+
+Budget is another key factor. Seattle has several airlines offering flights, and prices can differ widely depending on the airline, class (economy vs. business), and how far in advance you book. If they have a budget range, I can look for deals within that range to make it easier.
+
+I should also ask if there are any preferences regarding airlines or seating classes. Some people prefer certain airlines for comfort or reliability, while others might be flexible and want the best deal regardless of the airline. Knowing this helps in providing more tailored suggestions.
+
+Lastly, I need to know how they prefer to proceed with booking—whether they want me to look up options and present them, or if they have an account somewhere specific they'd like to use. This could influence whether we go through a third-party site or directly through the airline's website.
+
+So, putting it all together, I'll need to gather information on departure city, dates, budget, preferences, and their preferred method for booking. With that info, I can effectively assist them in finding the best flight options for four people to Seattle.
+</think>
+
+To assist you effectively in booking a flight for four to Seattle, I will need the following details:
+
+1. **Departure City**: Please specify where you are flying from or provide the airport code.
+
+2. **Travel Dates**: Let me know your preferred travel dates, including arrival and departure dates, if applicable.
+
+3. **Budget Range**: What is your budget for the flight? This helps in finding options within your price range.
+
+4. **Airline Preferences**: Do you have any preferred airlines or seating classes (e.g., economy vs. business)?
+
+5. **Booking Method**: How would you like to proceed with the booking—through a third-party site, directly with an airline, or another method?
+
+Once I have this information, I can help you find suitable flight options for your trip to Seattle.
